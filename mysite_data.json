@@ -1,0 +1,280 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Ew2JuMBc53tfQe4MCHUHWg$8+Q2VrPkvY/GvR/dCS9g521yaWzIZtZcoA6Mpork1T0=",
+      "last_login": "2024-11-26T14:12:52.653Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-11-20T11:39:57.920Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Antonio",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-20T13:15:52.718Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Hulio",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-20T13:18:44.808Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "localhost:8000",
+      "name": "localhost:8000"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+      "name": "music",
+      "slug": "music"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+      "name": "jazz",
+      "slug": "jazz"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+      "name": "django",
+      "slug": "django"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 4,
+    "fields": {
+      "name": "markdown",
+      "slug": "markdown"
+    }
+  },
+  {
+    "model": "taggit.tag",
+    "pk": 5,
+    "fields": {
+      "name": "coding",
+      "slug": "coding"
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 1,
+    "fields": {
+      "tag": 1,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 2,
+    "fields": {
+      "tag": 2,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 3,
+    "fields": {
+      "tag": 3,
+      "content_type": 7,
+      "object_id": 1
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 4,
+    "fields": {
+      "tag": 2,
+      "content_type": 7,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 5,
+    "fields": {
+      "tag": 4,
+      "content_type": 7,
+      "object_id": 5
+    }
+  },
+  {
+    "model": "taggit.taggeditem",
+    "pk": 6,
+    "fields": {
+      "tag": 5,
+      "content_type": 7,
+      "object_id": 5
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Hi there",
+      "slug": "hi-there",
+      "author": 1,
+      "body": "Hey! How's it going? I'm fine thatks!",
+      "publish": "2024-11-20T11:42:09Z",
+      "created": "2024-11-20T11:42:51.035Z",
+      "updated": "2024-11-20T17:13:20.891Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "New post title updated",
+      "slug": "new-post-title",
+      "author": 1,
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius leo nunc, sed tristique sem congue et. Donec aliquet, magna a fringilla dignissim, nulla sem elementum dolor, semper maximus odio libero et velit. Aliquam luctus et mauris ac maximus. Nulla et nunc dictum, malesuada metus non, consectetur augue. Nam sed sapien turpis. Nam ut cursus metus. Vestibulum faucibus sem libero, ac laoreet ante porttitor pellentesque. Nullam nec felis commodo tortor bibendum consectetur. Maecenas ut pellentesque diam. Suspendisse interdum lorem nec eros suscipit, sit amet scelerisque eros pretium. Pellentesque mollis at metus sit amet blandit. Ut eu nisi ut risus iaculis dignissim vitae non erat. Fusce a lorem eu dolor auctor dapibus sed vitae diam. Nulla lobortis eros vitae nisl accumsan eleifend. Donec eu finibus tortor, vel scelerisque tellus.\r\n\r\nDonec sed dui sodales, tincidunt erat eu, pretium dolor. Donec dictum massa a elit cursus maximus. Vestibulum lorem magna, tempor sed eros sed, commodo congue sem. Sed egestas sapien vitae elit finibus, nec tincidunt dolor accumsan. Vivamus ultricies ante venenatis ultricies vestibulum. Cras porta libero id felis varius dictum. Vivamus bibendum risus a purus tempus ullamcorper. Nulla ullamcorper viverra est a iaculis. Aliquam erat volutpat. Cras gravida, magna sit amet lacinia facilisis, nisl ipsum scelerisque purus, at suscipit leo risus non mi. Nam consectetur, nibh sit amet finibus mattis, odio erat sollicitudin mi, eget aliquet augue lacus ultricies massa. Integer vitae quam sed augue semper venenatis. Duis ultricies lacinia lacinia.\r\n\r\nDonec a turpis ut sapien sollicitudin cursus. Ut scelerisque lacus ut orci tempor ultrices. Sed non sapien pellentesque, dignissim dolor sit amet, lobortis sem. Cras a lorem eget ligula maximus sagittis. Sed sit amet lacus sed neque laoreet efficitur at quis odio. Nulla id metus in sapien viverra eleifend nec at diam. Praesent rutrum volutpat malesuada. Aliquam quis ultrices sem, varius ornare odio. Sed nec lacinia metus, consectetur iaculis quam. Donec ligula mauris, laoreet quis elementum id, ultrices quis turpis. Sed et nisi et tellus tristique commodo ac sit amet magna. In in tristique tellus, vitae sodales sem. Praesent justo quam, tincidunt ac dolor vitae, imperdiet tincidunt augue.\r\n\r\nQuisque bibendum tempus ipsum, in posuere arcu efficitur sit amet. Nam facilisis gravida arcu. Vestibulum congue ipsum id felis mattis tempus. Nullam iaculis sodales est luctus bibendum. Phasellus eleifend risus eget congue rhoncus. Aenean mattis orci non porttitor pharetra. In id diam eget sem posuere posuere. Aliquam vel leo vel leo semper aliquam. Etiam nec libero sed magna lacinia malesuada. Sed magna ligula, consectetur tincidunt nulla at, tristique venenatis est. Praesent id magna neque. Vestibulum facilisis auctor lorem, sit amet scelerisque ligula aliquam at. In viverra gravida libero nec tincidunt.\r\n\r\nVivamus sed ipsum at nibh pellentesque hendrerit. Suspendisse nec massa porttitor, vulputate sapien semper, pulvinar arcu. Mauris sed aliquet urna. Sed placerat iaculis felis. Vestibulum ultrices odio dui, at varius felis venenatis ac. Nulla posuere nisl sed mi consequat, ac vehicula velit congue. Suspendisse potenti. Vivamus metus ante, faucibus eget posuere eget, finibus ac urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac nisl ac elit sollicitudin malesuada sit amet euismod odio. Sed mollis id ante sit amet fermentum.",
+      "publish": "2024-11-20T13:11:57Z",
+      "created": "2024-11-20T13:11:57.094Z",
+      "updated": "2024-11-24T19:53:29.595Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "title": "Cover the letter",
+      "slug": "cover-the-letter",
+      "author": 3,
+      "body": "Hi there, this is teh hekf kfkjdfk sngp os iw o ifjwo",
+      "publish": "2024-11-21T22:03:29Z",
+      "created": "2024-11-21T22:03:53.087Z",
+      "updated": "2024-11-21T22:03:53.087Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "title": "Aloha brothers",
+      "slug": "aloha-brothers",
+      "author": 2,
+      "body": "Some of the people don't know how can I miss the my mother after this huge surprise.",
+      "publish": "2024-11-21T22:03:55Z",
+      "created": "2024-11-21T22:04:32.818Z",
+      "updated": "2024-11-21T22:04:32.818Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "title": "Markdown post",
+      "slug": "markdown-post",
+      "author": 3,
+      "body": "This is a post formatted with markdown\r\n--------------------------------------\r\n\r\n*This is emphasized* and **this is more emphasized**.\r\n\r\nHere is a list:\r\n\r\n* One\r\n* Two\r\n* Three\r\n\r\nAnd a [link to the Django website](https://www.djangoproject.com/).",
+      "publish": "2024-11-25T15:41:42Z",
+      "created": "2024-11-25T15:42:30.978Z",
+      "updated": "2024-11-25T15:46:28.157Z",
+      "status": "PB"
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 1,
+    "fields": {
+      "post": 4,
+      "name": "Pavlo",
+      "email": "pavlo@email.com",
+      "body": "Yeah, that's absolutely true!",
+      "created": "2024-11-22T15:56:54.049Z",
+      "updated": "2024-11-22T15:56:54.049Z",
+      "active": true
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 2,
+    "fields": {
+      "post": 3,
+      "name": "Givi",
+      "email": "givi@email.com",
+      "body": "Hehe )))))",
+      "created": "2024-11-22T15:57:23.279Z",
+      "updated": "2024-11-22T15:58:02.276Z",
+      "active": true
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 3,
+    "fields": {
+      "post": 4,
+      "name": "Zula",
+      "email": "zula@email.com",
+      "body": "Hello, this is Zula!",
+      "created": "2024-11-24T00:13:04.430Z",
+      "updated": "2024-11-24T00:13:04.430Z",
+      "active": true
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 4,
+    "fields": {
+      "post": 4,
+      "name": "Farik",
+      "email": "fafa@email.com",
+      "body": "Farik's comment here, yeah!",
+      "created": "2024-11-24T00:13:41.025Z",
+      "updated": "2024-11-24T00:13:41.025Z",
+      "active": true
+    }
+  }
+]
