@@ -32,6 +32,7 @@ DJ Blog demonstrates the capabilities of the Django Framework by incorporating e
 - Python 3.8+
 - pip
 - virtualenv
+- Docker
 
 ### Steps:
 
@@ -41,28 +42,38 @@ DJ Blog demonstrates the capabilities of the Django Framework by incorporating e
    cd dj-blog-master
    ```
 
-2. **Create and activate a virtual environment:**
+1. **Create and activate a virtual environment:**
    ```bash
    python -m venv env
    source env/bin/activate # For Windows: env\Scripts\activate
    ```
 
-3. **Install dependencies:**
+1. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Apply migrations:**
+1. **Pull Postgres**
+   ```bash
+   docker pull postgres:16.2
+   ```
+
+1. **Run Postgres**
+   ```bash
+   docker run --name=blog_db -e POSRGRES_DB=blog -e POSTGRES_USER=blog -e POSTGRES_PASSWORD=xxxxx -p 5432:5432 -d postgres:16.2
+   ```
+
+1. **Apply migrations:**
    ```bash
    python manage.py migrate
    ```
 
-5. **Run the server:**
+1. **Run the server:**
    ```bash
    python manage.py runserver
    ```
 
-6. Open in your browser: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+1. Open in your browser: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
